@@ -72,6 +72,7 @@ function anyType() {
 	let undefinedVal: undefined;
 	let neverVal: never;
 
+	unknownVal = anyVal;
 	anyVal = unknownVal; // any 타입에 unknown 타입 대입가능
 	undefinedVal = anyVal; // undefined 타입에 any 타입 대입 가능
 	// neverVal = anyVal; // 에러 - never 타입은 제외
