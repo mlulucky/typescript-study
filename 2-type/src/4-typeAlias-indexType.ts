@@ -49,7 +49,7 @@ let countryCodes: CountryCode = {
 
 type CountryNumberCodes = {
 	[key: string]: number;
-	// Korea: string;
+	// Korea: string;]
 }
 // 인덱스 시그니처로 타입선언시 주의
 // 추가적인 프로퍼티타입을 정의하는 경우
@@ -63,7 +63,7 @@ let countryNumberCodes: CountryNumberCodes = {
 }
 
 let countryNumberCodes1: CountryNumberCodes = {
-	// Korea:"kor", 에러발생 // 🐥 인덱스 시그니처의 타입(number)과 일치하지 않으므로
+	// Korea:"kor", // 에러발생 // 🐥 인덱스 시그니처의 타입(number)과 일치하지 않으므로
 } 
 // 규칙을 위반하지 않으면 모든 객체 타입을 허용.
 // 비어있는 객체 -> 프로퍼티가 없는 경우 -> 규칙을 위반할 프로퍼티X -> 에러발생X
