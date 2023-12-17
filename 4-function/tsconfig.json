@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"target": "ESNext", // 변환할 자바스크립트 버전
+		"module": "ESNext", // 변환할 자바스크립트 모듈시스템 - 노드가 es모듈 사용하기 위해 package.json 에 type:"module" 설정하기
+		"outDir": "dist",
+		"strict": true,
+		"moduleDetection": "force"
+	},
+	"ts-node": {
+		"esm": true
+	},
+	"include": ["src"] 
+}
+
+// tsc 명령어 : 타입스크립트 컴파일실행
+// 자바스크립트 실행 명령어 : node dist/index.js
